@@ -25,7 +25,7 @@ const Header = () => (
         className="rounded-full pointer-events-none w-6 h-6 absolute top-3 transform left-2"
         alt="user-profile"
       />
-      <select className="block w-full mt-1 pl-10 rounded-lg border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+      <select className="block w-full mt-1 pl-10 rounded-lg border-gray-300 shadow-sm">
         <option>Johndoe.near</option>
         <option>Wedding</option>
         <option>Birthday</option>

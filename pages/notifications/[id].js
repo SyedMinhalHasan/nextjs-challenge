@@ -1,4 +1,3 @@
-import { urlObjectKeys } from "next/dist/shared/lib/utils";
 import { useTabs } from "react-headless-tabs";
 import Info from "../../components/info";
 import PendingOffers from "../../components/pending-offers";
