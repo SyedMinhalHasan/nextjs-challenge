@@ -21,7 +21,7 @@ const Header = () => (
 
     <div className="relative">
       <img
-        src="https://www.w3schools.com/howto/img_avatar.png"
+        src="assets/User_Img_1.png"
         className="rounded-full pointer-events-none w-6 h-6 absolute top-3 transform left-2"
         alt="user-profile"
       />

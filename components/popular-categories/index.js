@@ -11,9 +11,13 @@ const PopularCategories = () => {
   return (
     <>
       <div className="flex justify-between mb-3">
-        <h1 className="text-lg font-bold text-gray-700">Popular Categories</h1>
+        <h1 className="text-gray-dark font-size-third font-weight-second">
+          Popular Categories
+        </h1>
         <div className="flex items-center text-purple-500">
-          <h3 className="font-semibold">See all</h3>{" "}
+          <h3 className="font-size-fifth text-indigo-dark font-weight-second">
+            See all
+          </h3>{" "}
           <RightArrowPurpleIcon className="ml-3" />
         </div>
       </div>

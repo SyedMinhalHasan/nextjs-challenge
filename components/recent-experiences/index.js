@@ -5,7 +5,9 @@ const RecentExperiences = () => {
   return (
     <div>
       <div className="experience-header">
-        <h1 className="text-lg font-bold text-gray-700">Recent Experiences</h1>
+        <h1 className="text-gray-dark font-size-third font-weight-second">
+          Recent Experiences
+        </h1>
       </div>
       <ExperienceCard
         Icon={DeFiSwapIcon}

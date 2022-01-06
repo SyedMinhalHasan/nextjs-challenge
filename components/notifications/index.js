@@ -3,7 +3,7 @@ import DocuSign from "../../assets/Docu_Sign.svg";
 const Notifications = () => {
   const data = [
     {
-      image: "https://www.w3schools.com/howto/img_avatar.png",
+      image: "assets/User_Img_1.png",
       userDetail: {
         id: "123",
         username: "CryptoKing.near"
@@ -14,7 +14,7 @@ const Notifications = () => {
       time: "3 days ago"
     },
     {
-      image: "https://www.w3schools.com/howto/img_avatar.png",
+      image: "assets/User_Img_1.png",
       userDetail: {
         id: "123",
         username: "CryptoKing.near"
@@ -24,7 +24,7 @@ const Notifications = () => {
       time: "5 days ago"
     },
     {
-      image: "https://www.w3schools.com/howto/img_avatar.png",
+      image: "assets/User_Img_1.png",
       userDetail: {
         id: "123",
         username: "maxwell.near"

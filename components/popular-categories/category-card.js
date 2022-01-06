@@ -8,7 +8,9 @@ const CategoryCard = ({ Icon, heading, bgColor }) => {
     >
       <Icon />
       <div className="flex justify-between items-center mt-3">
-        <h2>{heading}</h2>
+        <h2 className="font-size-fourth text-gray-medium font-weight-second">
+          {heading}
+        </h2>
         <RightArrow />
       </div>
     </div>

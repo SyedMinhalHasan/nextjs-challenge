@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.font-size-second {
+  font-size: 18px;
+}
+
+.font-size-third {
+  font-size: 16px;
+}
+
+.font-size-fourth {
+  font-size: 15px;
+}
+
+.font-size-fifth {
+  font-size: 14px;
+}
+
+.font-size-sixth {
+  font-size: 12px;
+}
+
+.font-weight-second {
+  font-weight: 600;
+}
+
+.font-weight-third {
+  font-weight: 500;
+}
+
+.font-weight-fourth {
+  font-weight: 400;
+}

@@ -2,7 +2,7 @@ import ActivityItem from "./activity_item";
 const Activities = () => {
   const data = [
     {
-      image: "https://www.w3schools.com/howto/img_avatar.png",
+      image: "assets/User_Img_1.png",
       userDetail: {
         id: "123",
         username: "johndoe.near"
@@ -11,7 +11,7 @@ const Activities = () => {
       time: "2 days ago"
     },
     {
-      image: "https://www.w3schools.com/howto/img_avatar.png",
+      image: "assets/User_Img_1.png",
       userDetail: {
         id: "123",
         username: "CryptoKing.near"

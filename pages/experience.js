@@ -1,12 +1,22 @@
+import { useRef, useState } from "react";
 import { useTabs } from "react-headless-tabs";
+import CloseIcon from "../assets/Close_Icon.svg";
+import CopyIcon from "../assets/Copy_Icon.svg";
+import DiscordIcon from "../assets/Discord.svg";
 import DocuSign from "../assets/Docu_Sign.svg";
 import SendIcon from "../assets/Send_Icon.svg";
+import Share from "../assets/Share.svg";
 import ShareIcon from "../assets/Share_Icon.svg";
+import TwitterIcon from "../assets/Twitter.svg";
 import UsersIcon from "../assets/Users_Icon.svg";
 import Activities from "../components/activities";
 import Details from "../components/details";
+import ModalComponent from "../components/modal";
 
 const Experience = () => {
+  const [open, setOpen] = useState(false);
+  const cancelButtonRef = useRef(null);
+
   const items = ["Details", "Activities"];
   const [selectedTab, setSelectedTab] = useTabs(items);
   const changeTab = (e) => {
@@ -29,7 +39,10 @@ const Experience = () => {
         >
           <DocuSign className="absolute" style={{ top: 30 }} />
         </div>
-        <div className="flex justify-end mt-3 pr-5 items-center">
+        <div
+          onClick={() => setOpen(true)}
+          className="flex justify-end mt-3 pr-5 items-center"
+        >
           <ShareIcon />{" "}
           <h2 className="ml-2 text-blue-500 font-semibold text-lg">Share</h2>
         </div>
@@ -100,6 +113,38 @@ const Experience = () => {
           {selectedTab === "Details" ? <Details /> : <Activities />}
         </div>
       </div>
+
+      <ModalComponent
+        open={open}
+        setOpen={setOpen}
+        cancelButtonRef={cancelButtonRef}
+      >
+        <div className="w-4/5 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all">
+          <div className="w-full p-4 bg-gray-50 sm:flex sm:flex-row-reverse">
+            <div className="flex justify-between mb-5">
+              <h2 className="text-lg font-semibold text-gray-700">
+                Share this Experience
+              </h2>
+
+              <CloseIcon onClick={() => setOpen(false)} />
+            </div>
+
+            <div className="p-3 rounded-lg bg-blue-100 mb-5 text-ellipsis overflow-hidden text-blue-500">
+              https://nearlabs.app/app/docu_sign.com
+            </div>
+
+            <div className="flex justify-center items-center mb-5">
+              <CopyIcon /> <h3 className="ml-2 text-blue-500">Copy link</h3>
+            </div>
+
+            <div className="flex justify-center">
+              <TwitterIcon className="mr-5" />
+              <DiscordIcon className="mr-5" />
+              <Share />
+            </div>
+          </div>
+        </div>
+      </ModalComponent>
     </>
   );
 };

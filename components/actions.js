@@ -1,10 +1,10 @@
+import Link from "next/link";
 import { useRef, useState } from "react";
 import ReceieveIcon from "../assets/Receieve_Icon.svg";
-import SendIcon from "../assets/Send_Icon.svg";
 import ReceieveBlueIcon from "../assets/Recieve_Blue_Icon.svg";
 import SendBlueIcon from "../assets/Send_Blue_Icon.svg";
+import SendIcon from "../assets/Send_Icon.svg";
 import ModalComponent from "./modal";
-import Link from "next/link";
 const Actions = () => {
   const [openSend, setOpenSend] = useState(false);
   const [openRecieve, setOpenRecieve] = useState(false);

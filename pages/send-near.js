@@ -1,4 +1,6 @@
 import SendBlueIcon from "../assets/Send_Blue_Icon.svg";
+import SendIcon from "../assets/Send_Icon.svg";
+
 const SendNear = () => {
   return (
     <>
@@ -10,7 +12,7 @@ const SendNear = () => {
         <h2 className="font-medium mb-2">To</h2>
         <div className="relative">
           <img
-            src="https://www.w3schools.com/howto/img_avatar.png"
+            src="assets/User_Img_1.png"
             className="rounded-full pointer-events-none w-6 h-6 absolute top-3 transform left-2"
             alt="user-profile"
           />
@@ -43,6 +45,13 @@ const SendNear = () => {
           />
           <span className="basid-1/5 text-center p-3">NEAR</span>
         </div>
+      </div>
+
+      <div className="flex justify-center items-center mt-10">
+        <button className="relative flex items-center justify-center bg-gray-400 rounded-lg px-5 py-3 w-2/5 mb-4">
+          <h3 className="text-white text-center mr-3">Send</h3>
+          <SendIcon className="absolute right-3" />
+        </button>
       </div>
     </>
   );
