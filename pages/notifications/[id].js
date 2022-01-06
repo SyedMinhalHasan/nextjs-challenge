@@ -37,7 +37,7 @@ const NotificationItemPage = () => {
         <div className="flex items-center mt-2">
           <img
             className="mr-3 flex w-10 h-10 border-2 p-1 border-black rounded-full"
-            src={"assets/User_Img_1.png"}
+            src={"/assets/User_Img_1.png"}
           />{" "}
           <h1 className="text-md text-gray-700 font-semibold">Johndoe.near</h1>
         </div>

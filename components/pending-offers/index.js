@@ -2,7 +2,7 @@ import PendingOfferItem from "./pending-offer-item";
 const PendingOffers = () => {
   const data = [
     {
-      image: "assets/User_Img_1.png",
+      image: "/assets/User_Img_1.png",
       userDetail: {
         id: "123",
         username: "CryptoKing.near"
@@ -11,7 +11,7 @@ const PendingOffers = () => {
       time: "5 days ago"
     },
     {
-      image: "assets/User_Img_1.png",
+      image: "/assets/User_Img_1.png",
       userDetail: {
         id: "123",
         username: "CryptoKing.near"

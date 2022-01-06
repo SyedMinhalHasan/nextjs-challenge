@@ -12,7 +12,7 @@ const SendNear = () => {
         <h2 className="font-medium mb-2">To</h2>
         <div className="relative">
           <img
-            src="assets/User_Img_1.png"
+            src="/assets/User_Img_1.png"
             className="rounded-full pointer-events-none w-6 h-6 absolute top-3 transform left-2"
             alt="user-profile"
           />
